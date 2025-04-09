@@ -1,8 +1,7 @@
 {
   "name": "inlamning3",
   "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
+  "main": "script.js",
   "scripts": {
     "test": "jest"
   },

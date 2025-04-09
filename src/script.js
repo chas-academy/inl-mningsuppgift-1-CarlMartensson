@@ -26,21 +26,27 @@ const contactBook = {
 };
   
   // Ange en grupp
-  let groupToShow;
-  
+  let groupToShow = "vänner";
 
 
+function showContacts(contactBook, groupToShow) { 
 
-function showContacts(contactBook, groupToShow) { // Rör ej denna kod
+  // Rör ej denna kod
 
 
-
-    // Loopar igenom alla kontakter och jämför grupp
+  // Loopar igenom alla kontakter och jämför grupp
    
-    return  // här ska sträng med namn och tekefonnummer visas i form av string interpolation
+    for (let contact of contactBook.contacts) {
+      if (contact.group === groupToShow) {
 
-
+        return `Namn: ${contact.name}, Telefon: ${contact.phone}`;
+    
+        // här ska sträng med namn och telefonnummer visas i form av string interpolation
+      }
+    }
 }
+
+console.log(showContacts(contactBook, groupToShow));
 
 
 // Rör ej denna kod
